@@ -1,0 +1,84 @@
+@font-face {
+	font-family: "Karen";
+	src: url("./assets/fonts/karen.otf");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	@apply mobile:text-[23px];
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+body {
+	@apply bg-primary-default text-secondary;
+	width: 100vw;
+	height: 100vh;
+	@apply border-[5px] border-primary-shadow;
+	overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@apply text-secondary font-heading;
+}
+
+h2 {
+	@apply leading-7 text-title;
+}
+
+p {
+	@apply text-base font-medium;
+}
+
+section {
+	@apply grid grid-cols-6 px-[.625rem] gap-x-[0.313rem] min-h-[97.15vh];
+	height: fit-content;
+}
+
+img {
+	image-rendering: -moz-crisp-edges; /* Firefox */
+	image-rendering: -o-crisp-edges; /* Opera */
+	image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+	image-rendering: crisp-edges;
+	-ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+}
+
+input[type="button"] {
+	@apply bg-alternative text-primary-shadow px-7 py-[0.1rem] font-semibold rounded-full mx-auto;
+	width: fit-content;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+	@apply ring-2 ring-alternative bg-primary-shadow;
+}
+
+input,
+textarea {
+	@apply focus-visible:outline-none focus:ring-2 focus:ring-alternative;
+}
