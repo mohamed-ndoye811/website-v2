@@ -53,7 +53,7 @@ module.exports = {
 			"2xl": "1536px",
 			// => @media (min-width: 1536px) { ... }
 
-			mobile: { min: "320px", max: "480px" },
+			mobile: { min: "390px", max: "480px" },
 
 			tablet: { min: "481px", max: "768px" },
 

@@ -2,7 +2,7 @@
 	<section class="hero mb-4 pt-[30%]">
 		<div class="heading relative col-span-6 h-auto flex flex-col gap-7">
 			<div
-				class="image grid place-content-center relative col-span-full translate-x-[-50%] z-0 mobile:scale-[.7] left-[65%]"
+				class="image grid place-content-center relative col-span-full translate-x-[-50%] z-0 mobile:scale-[.7] left-[65%] scale-[.9] xxs:bottom-10 mobile:top-[0.25rem]"
 			>
 				<div
 					class="mask rounded-memoji overflow-hidden h-[22rem] w-[22rem] rotate-[-45deg] -mb-28 relative z-0"
@@ -61,7 +61,7 @@
 				in Touch?
 			</h2>
 			<div
-				class="image grid place-content-center absolute col-span-full top-0 translate-y-[-50%] translate-x-[-50%] z-0 scale-[.6] left-[70%]"
+				class="image grid place-content-center absolute col-span-full -top-0 translate-y-[-50%] translate-x-[-50%] z-0 scale-[.55] left-[70%]"
 			>
 				<div
 					class="mask rounded-memoji overflow-hidden h-[22rem] w-[22rem] rotate-[-45deg] -mb-28 relative z-0"
@@ -77,7 +77,7 @@
 				</div>
 			</div>
 		</div>
-		<form action="" class="col-span-full text-base mt-[3rem]">
+		<form action="" class="col-span-full text-base">
 			<fieldset class="flex flex-col gap-2">
 				<legend class="mb-1 font-medium">Leave a message</legend>
 				<input
