@@ -1,5 +1,5 @@
 <template>
-	<section class="hero mb-4 pt-[30%]">
+	<section class="hero mb-4 pt-[30%] flex flex-col">
 		<div class="heading relative col-span-6 h-auto flex flex-col gap-7">
 			<div
 				class="image grid place-content-center relative col-span-full translate-x-[-50%] z-0 mobile:scale-[.7] left-[65%] scale-[.9] xxs:bottom-10 mobile:top-[0.25rem]"
@@ -31,9 +31,9 @@
 		</div>
 	</section>
 
-	<section class="projects-preview mb-8">
-		<h2 class="col-span-6 uppercase mb-5">have a look at my projects</h2>
-		<div class="projects-list col-span-6 flex flex-col gap-7">
+	<section class="projects-preview">
+		<h2 class="uppercase mb-5">have a look at my projects</h2>
+		<div class="projects-list flex flex-col gap-7">
 			<div
 				class="project-item flex odd:flex-row-reverse relative"
 				v-for="project in projects"
@@ -46,16 +46,12 @@
 					<p class="font-medium">{{ project.desc }}</p>
 				</div>
 			</div>
+			<router-link to="/projects" class="button">See all projects</router-link>
 		</div>
-		<router-link
-			to="/projects"
-			class="col-span-6 mx-auto bg-alternative text-primary-shadow font-semibold rounded-full px-10 mt-7 py-[0.188rem] text-base"
-			>See all projects</router-link
-		>
 	</section>
 
-	<section class="contact pt-[3.5rem]">
-		<div class="heading relative col-span-6 h-auto">
+	<section class="contact pt-[3.5rem] flex flex-col mt-[4rem] mb-[5rem]">
+		<div class="heading relative h-[11rem]">
 			<h2 class="relative uppercase z-10 top-[5rem]">
 				Want <br />to get <br />
 				in Touch?
@@ -123,7 +119,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .projects-list {
 	.project-item {
 		&:nth-child(odd) {
@@ -144,5 +140,14 @@ export default {
 			bottom: 1rem;
 		}
 	}
+}
+
+section {
+	@apply min-h-[97.15vh];
+	min-height: 97.15vh;
+}
+
+section.contact {
+	min-height: unset;
 }
 </style>

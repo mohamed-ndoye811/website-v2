@@ -5,7 +5,12 @@
 		<nav class="relative z-10">
 			<ul class="flex flex-col items-center gap-7">
 				<li v-for="link in nav" class="font-heading text-title uppercase">
-					<router-link :to="link.path" @click="close">{{ link.name }}</router-link>
+					<router-link
+						:to="link.path"
+						@click="close"
+						:class="{ hidden: link.name == 'Project details' }"
+						>{{ link.name }}</router-link
+					>
 				</li>
 			</ul>
 		</nav>

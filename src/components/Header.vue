@@ -2,7 +2,9 @@
 	<header
 		class="flex justify-between text-base fixed top-[0.625rem] left-0 w-full z-50 px-[1.9rem] mx-auto"
 	>
-		<h1 class="font-body font-semibold">mohamed ndoye.</h1>
+		<router-link to="/" class="font-body font-semibold"
+			>mohamed ndoye.</router-link
+		>
 
 		<div class="menu-button font-body font-semibold" @click="toggleMenu">
 			menu

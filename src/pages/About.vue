@@ -118,11 +118,19 @@ See you there maybe!</pre
 				class="flex justify-between text-alternative absolute top-[45%] left-[50%] w-full translate-x-[-50%] translate-y-[-50%] z-10"
 			>
 				<li>
-					<a href="" class="uppercase font-bold text-base">youtube</a>
+					<a
+						href="https://www.youtube.com/channel/UCI9bv50AJbaY8Li8SMuYikw"
+						class="uppercase font-bold text-base"
+						>youtube</a
+					>
 				</li>
 
 				<li>
-					<a href="" class="uppercase font-bold text-base">instagram</a>
+					<a
+						href="https://www.instagram.com/verse811/?hl=en"
+						class="uppercase font-bold text-base"
+						>instagram</a
+					>
 				</li>
 
 				<li>
