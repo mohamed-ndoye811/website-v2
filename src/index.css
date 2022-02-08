@@ -24,7 +24,7 @@ body {
 }
 
 #borders {
-	@apply border-[7px] border-primary-shadow h-[100vh] w-[100vw] fixed left-0 top-0 pointer-events-none z-[9999] overflow-hidden;
+	@apply border-[7px] border-primary-shadow h-[100vh] w-[100vw] fixed left-0 top-0 pointer-events-none z-[999999] overflow-hidden;
 }
 
 h1,
