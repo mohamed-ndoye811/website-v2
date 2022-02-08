@@ -17,18 +17,14 @@
 	box-sizing: border-box;
 }
 
-html {
-	height: 100vh;
-	width: 100vw;
-	overflow: hidden;
-}
-
 body {
 	@apply bg-primary-default text-secondary;
-	width: 100vw;
-	height: 100vh;
-	@apply border-[5px] border-primary-shadow;
-	overflow-x: hidden;
+	height: 100%;
+	width: 100%;
+}
+
+#borders {
+	@apply border-[7px] border-primary-shadow h-[100vh] w-[100vw] fixed left-0 top-0 pointer-events-none z-[9999] overflow-hidden;
 }
 
 h1,

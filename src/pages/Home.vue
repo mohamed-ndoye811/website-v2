@@ -1,5 +1,5 @@
 <template>
-	<section class="hero mb-4 pt-[30%] flex flex-col">
+	<section class="hero mb-4 pt-[20%] flex flex-col">
 		<div class="heading relative col-span-6 h-auto flex flex-col gap-7">
 			<div
 				class="image grid place-content-center relative col-span-full translate-x-[-50%] z-0 mobile:scale-[.7] left-[65%] scale-[.9] xxs:bottom-10 mobile:top-[0.25rem]"
@@ -31,7 +31,7 @@
 		</div>
 	</section>
 
-	<section class="projects-preview">
+	<section class="projects-preview mb-8">
 		<h2 class="uppercase mb-5">have a look at my projects</h2>
 		<div class="projects-list flex flex-col gap-7">
 			<div
@@ -50,7 +50,7 @@
 		</div>
 	</section>
 
-	<section class="contact pt-[3.5rem] flex flex-col mt-[4rem] mb-[5rem]">
+	<section class="contact pt-[3.5rem] flex flex-col mb-[4rem]">
 		<div class="heading relative h-[11rem]">
 			<h2 class="relative uppercase z-10 top-[5rem]">
 				Want <br />to get <br />

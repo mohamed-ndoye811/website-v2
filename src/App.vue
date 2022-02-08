@@ -1,6 +1,8 @@
 <template>
-	<div class="container w-[90.625%] mx-auto font-body relative px-[.25rem]">
-		<Header></Header>
+	<Header></Header>
+	<div
+		class="container w-[90.625%] mx-auto font-body relative px-[.25rem] h-full"
+	>
 		<router-view></router-view>
 	</div>
 	<Footer></Footer>
