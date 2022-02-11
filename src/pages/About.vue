@@ -1,5 +1,5 @@
 <template>
-	<section class="flex flex-col gap-5 hero">
+	<section class="flex flex-col gap-5 hero relative -top-[1.5rem]">
 		<div class="heading relative col-span-6 h-auto flex flex-col gap-14">
 			<div
 				class="image grid place-content-center relative col-span-full translate-x-[-50%] z-0 mobile:scale-[.8] left-[57%] scale-[.9] xxs:bottom-10 mobile:top-[0.25rem]"

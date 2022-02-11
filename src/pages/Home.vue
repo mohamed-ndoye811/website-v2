@@ -1,34 +1,36 @@
 <template>
-	<section class="hero mb-4 pt-[20%] flex flex-col">
-		<div class="heading relative col-span-6 h-auto flex flex-col gap-7">
-			<div
-				class="image grid place-content-center relative col-span-full translate-x-[-50%] z-0 mobile:scale-[.7] left-[65%] scale-[.9] xxs:bottom-10 mobile:top-[0.25rem]"
-			>
+	<section class="hero mb-4 pt-[5%] flex flex-col">
+		<transition appear @before-enter="beforeEnter" @enter="enter">
+			<div class="heading relative col-span-6 h-auto flex flex-col gap-7">
 				<div
-					class="mask rounded-memoji overflow-hidden h-[22rem] w-[22rem] rotate-[-45deg] -mb-28 relative z-0"
+					class="image grid place-content-center relative col-span-full translate-x-[-50%] z-0 mobile:scale-[.7] left-[65%] scale-[.9] xxs:bottom-10 mobile:top-[0.25rem]"
 				>
-					<img
-						class="z-10 drop-shadow-lg relative rotate-[35deg] top-[-3rem] left-[-3.15rem] scale-[.8]"
-						src="../assets/imgs/memojis/memoji-hero.png"
-						alt="memoji representing mohamed ndoye"
-					/>
 					<div
-						class="background absolute bg-alternative/30 aspect-square h-[15.6rem] bottom-[20%] rounded-memoji z-0"
-					></div>
+						class="mask rounded-memoji overflow-hidden h-[22rem] w-[22rem] rotate-[-45deg] -mb-28 relative z-0"
+					>
+						<img
+							class="z-10 drop-shadow-lg relative rotate-[35deg] top-[-3rem] left-[-3.15rem] scale-[.8]"
+							src="../assets/imgs/memojis/memoji-hero.png"
+							alt="memoji representing mohamed ndoye"
+						/>
+						<div
+							class="background absolute bg-alternative/30 aspect-square h-[15.6rem] bottom-[20%] rounded-memoji z-0"
+						></div>
+					</div>
+				</div>
+
+				<div class="texts col-span-full relative z-10">
+					<h2 class="col-span-6">
+						WELCOME <br />
+						TO MY WEBSITE
+					</h2>
+					<p class="col-span-full">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+						vulputate libero et velit interdum, ac aliquet odio mattis.
+					</p>
 				</div>
 			</div>
-
-			<div class="texts col-span-full relative z-10">
-				<h2 class="col-span-6">
-					WELCOME <br />
-					TO MY WEBSITE
-				</h2>
-				<p class="col-span-full">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-					vulputate libero et velit interdum, ac aliquet odio mattis.
-				</p>
-			</div>
-		</div>
+		</transition>
 	</section>
 
 	<section class="projects-preview mb-8">
@@ -105,7 +107,24 @@
 </template>
 
 <script>
+import gsap from "gsap";
+
 export default {
+	setup() {
+		const beforeEnter = (el) => {
+			console.log("before enter - set initial state");
+			el.style.transform = "translateY(50px)";
+			el.style.opacity = 0;
+		};
+
+		const enter = (el) => {
+			console.log(el);
+			gsap.to(el, { opacity: 1, duration: 1.2, y: 0 });
+		};
+
+		return { beforeEnter, enter };
+	},
+
 	data() {
 		return {
 			projects: [

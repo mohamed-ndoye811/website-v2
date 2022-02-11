@@ -8,7 +8,9 @@
 					<router-link
 						:to="link.path"
 						@click="close"
-						:class="{ hidden: link.name == 'Project details' }"
+						:class="{
+							hidden: link.name == 'Project details' || link.name == 'Test',
+						}"
 						>{{ link.name }}</router-link
 					>
 				</li>

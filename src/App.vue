@@ -1,9 +1,7 @@
 <template>
 	<Loader @playMusic="music"></Loader>
 	<Header></Header>
-	<div
-		class="container w-[90.625%] mx-auto font-body relative px-[.25rem] h-full"
-	>
+	<div class="container w-[92.1875%] mx-auto font-body relative h-full pt-10">
 		<router-view></router-view>
 	</div>
 	<Footer></Footer>
@@ -37,21 +35,18 @@ export default {
 	},
 
 	mounted() {
-		const sound = new Howl({
-			src: ["src/assets/musics/background_1.mp3"],
-			loop: true,
-
-			onplay: (test) => {
-				if (!this.bgMusic.playedOnce) {
-					this.bgMusic.id = test;
-					this.bgMusic.playedOnce = true;
-				}
-			},
-		});
-
-		Howler.volume(0.7);
-
-		this.bgMusic.player = sound;
+		// const sound = new Howl({
+		// 	src: ["src/assets/musics/background_1.mp3"],
+		// 	loop: true,
+		// 	onplay: (test) => {
+		// 		if (!this.bgMusic.playedOnce) {
+		// 			this.bgMusic.id = test;
+		// 			this.bgMusic.playedOnce = true;
+		// 		}
+		// 	},
+		// // });
+		// Howler.volume(0.7);
+		// this.bgMusic.player = sound;
 	},
 
 	methods: {

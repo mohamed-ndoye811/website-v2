@@ -5,6 +5,7 @@ import Home from "../pages/Home.vue";
 import Projects from "../pages/Projects.vue";
 import Project from "../pages/Projects/Project.vue"; // Project details page
 import About from "../pages/About.vue";
+import Test from "../pages/Test.vue";
 
 export const routes = [
 	{
@@ -26,6 +27,11 @@ export const routes = [
 		path: "/projects/:id",
 		name: "Project details",
 		component: Project,
+	},
+	{
+		path: "/tests",
+		name: "Test",
+		component: Test,
 	},
 ];
 
