@@ -8,7 +8,7 @@
 @tailwind utilities;
 
 :root {
-	@apply mobile:text-[23px] xxs:text-[18px];
+	@apply text-[16px];
 }
 
 * {
@@ -43,7 +43,7 @@ h2 {
 
 p,
 pre {
-	@apply text-base font-medium font-body;
+	@apply text-base font-normal font-body;
 	white-space: pre-wrap; /* Since CSS 2.1 */
 	white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
 	white-space: -pre-wrap; /* Opera 4-6 */
@@ -64,8 +64,9 @@ img {
 	-ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
 }
 
-input[type="button"] {
-	@apply bg-alternative text-primary-shadow px-7 py-[0.1rem] font-semibold rounded-full mx-auto;
+input[type="button"],
+.button {
+	@apply bg-alternative text-primary-shadow px-10 py-[0.1rem] font-semibold rounded-full mx-auto text-[1rem];
 	width: fit-content;
 }
 

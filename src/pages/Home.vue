@@ -1,5 +1,5 @@
 <template>
-	<section class="hero mb-4 pt-[5%] flex flex-col">
+	<section class="hero mb-4 flex flex-col pt-[40%]">
 		<transition appear @before-enter="beforeEnter" @enter="enter">
 			<div class="heading relative col-span-6 h-auto flex flex-col gap-7">
 				<div
@@ -45,24 +45,24 @@
 					<h3 class="font-body uppercase text-alternative font-extrabold -mb-1">
 						{{ project.name }}
 					</h3>
-					<p class="font-medium">{{ project.desc }}</p>
+					<p class="font-medium text-[1rem]">{{ project.desc }}</p>
 				</div>
 			</div>
 			<router-link to="/projects" class="button">See all projects</router-link>
 		</div>
 	</section>
 
-	<section class="contact pt-[3.5rem] flex flex-col mb-[4rem]">
-		<div class="heading relative h-[11rem]">
+	<section class="contact flex flex-col my-[8rem]">
+		<div class="heading relative h-[11rem] z-0 mb-[0.75rem]">
 			<h2 class="relative uppercase z-10 top-[5rem]">
 				Want <br />to get <br />
 				in Touch?
 			</h2>
 			<div
-				class="image grid place-content-center absolute col-span-full -top-0 translate-y-[-50%] translate-x-[-50%] z-0 scale-[.55] left-[70%]"
+				class="image grid place-content-center absolute col-span-full -top-0 translate-y-[-50%] translate-x-[-50%] z-0 scale-[.7] left-[65%]"
 			>
 				<div
-					class="mask rounded-memoji overflow-hidden h-[22rem] w-[22rem] rotate-[-45deg] -mb-28 relative z-0"
+					class="mask rounded-memoji overflow-hidden h-[22rem] w-[22rem] rotate-[-45deg] -mb-[30%] relative z-0"
 				>
 					<img
 						class="z-10 drop-shadow-lg relative rotate-[55deg] top-[4rem] left-[-3.15rem] scale-[.9]"
@@ -75,7 +75,7 @@
 				</div>
 			</div>
 		</div>
-		<form action="" class="col-span-full text-base">
+		<form action="" class="col-span-full text-base z-10">
 			<fieldset class="flex flex-col gap-2">
 				<legend class="mb-1 font-medium">Leave a message</legend>
 				<input

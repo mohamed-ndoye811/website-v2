@@ -17,8 +17,8 @@ module.exports = {
 		},
 
 		fontSize: {
-			title: ["1.75rem", "1.673rem"],
-			base: ["0.75rem", "0.923rem"],
+			title: ["2rem", "1.673rem"],
+			base: ["1rem", "1.25rem"],
 			navLinks: ["1.75rem"],
 		},
 		extend: {

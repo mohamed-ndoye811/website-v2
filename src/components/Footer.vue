@@ -1,11 +1,11 @@
 <template>
 	<footer
-		class="flex items-center left-0 text-base font-body h-8 pt-1 px-1 relative overflow-hidden"
+		class="flex items-center left-0 text-base font-body h-10 relative overflow-hidden"
 	>
 		<div
-			class="content w-full flex justify-between items-center mx-auto mobile:px-[7px]"
+			class="content w-full flex justify-between items-center mx-auto px-[7.8125%]"
 		>
-			<div class="copyright text-[0.6rem] font-medium text-alternative">
+			<div class="copyright text-[.75rem] font-medium text-alternative">
 				© 2022 ~ mohamed ndoye
 			</div>
 			<div class="socials">
