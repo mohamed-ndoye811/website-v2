@@ -1,17 +1,21 @@
 <template>
 	<header
-		class="flex justify-between text-base fixed top-[0.625rem] left-0 w-full z-50 px-[7.8125%] mx-auto"
+		class="flex justify-between text-base fixed top-[0.825rem] left-0 w-full z-50 px-[7.8125%] mx-auto"
 	>
-		<router-link to="/" class="font-body font-semibold"
-			>mohamed ndoye.</router-link
+		<router-link
+			to="/"
+			class="font-body font-semibold"
+			@click="toggleMenu(false)"
 		>
+			mohamed ndoye.
+		</router-link>
 
-		<div class="menu-button font-body font-semibold" @click="toggleMenu">
+		<div class="menu-button font-body font-semibold" @click="toggleMenu()">
 			menu
 		</div>
 	</header>
 
-	<Menu v-if="showMenu" @close="toggleMenu"></Menu>
+	<Menu :menu-state="showMenu" @close="toggleMenu"></Menu>
 </template>
 
 <script>
@@ -27,8 +31,9 @@ export default {
 	},
 
 	methods: {
-		toggleMenu() {
-			this.showMenu = !this.showMenu;
+		toggleMenu: function (value = !this.showMenu) {
+			console.log(value);
+			this.showMenu = value;
 		},
 	},
 };
