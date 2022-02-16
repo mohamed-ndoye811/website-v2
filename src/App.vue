@@ -155,16 +155,12 @@ export default {
 	},
 
 	mounted() {
-		const audioFiles = import.meta.glob("/assets/musics/*.mp3");
 		var playlist = [];
-
-		for (let key in audioFiles) {
-			playlist.push({
-				title: "Can i get a euuuhhhhh ft. Komplex",
-				file: key,
-				howl: null,
-			});
-		}
+		playlist.push({
+			title: "Can i get a euuuhhhhh ft. Komplex",
+			file: "/assets/musics/triple_double.mp3",
+			howl: null,
+		});
 
 		console.log(playlist);
 		this.bgMusic.player = new Player(playlist);
