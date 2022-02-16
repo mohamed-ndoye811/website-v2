@@ -1,5 +1,5 @@
 <template>
-	<section class="hero mb-4 flex flex-col pt-[40%]">
+	<section class="hero mb-4 flex flex-col pt-[45%]">
 		<transition appear @before-enter="beforeEnter" @enter="enter">
 			<div class="heading relative col-span-6 h-auto flex flex-col gap-7">
 				<div

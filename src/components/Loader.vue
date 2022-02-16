@@ -4,7 +4,7 @@
 		v-if="!questionAnswered"
 	>
 		<div class="w-full flex flex-col">
-			<h2 class="text-center">Want to play some music?</h2>
+			<h2 class="text-center">Want to hear some background music?</h2>
 			<div class="buttons mx-auto flex gap-5 text-base font-body mt-5">
 				<button class="uppercase font-medium" @click="playMusic('play')">
 					Yes

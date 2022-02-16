@@ -5,9 +5,7 @@
 		<div
 			class="content w-full flex justify-between items-center mx-auto px-[7.8125%]"
 		>
-			<div class="copyright text-[.75rem] font-medium text-alternative">
-				© 2022 ~ mohamed ndoye
-			</div>
+			<div class="copyright text-[.75rem] font-medium text-alternative"></div>
 			<div class="socials">
 				<ul class="flex gap-2">
 					<li v-for="social in socials">
