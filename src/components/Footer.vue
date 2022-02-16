@@ -24,9 +24,6 @@
 </template>
 
 <script>
-import instagramLogo from "../../public/assets/imgs/icons/instagram.svg";
-import linkedInLogo from "../../public/assets/imgs/icons/linkedin.svg";
-
 export default {
 	data() {
 		return {
@@ -34,12 +31,12 @@ export default {
 				{
 					name: "LinkedIn",
 					link: "https://www.linkedin.com/in/mohamed-ndoye-4687a1189/",
-					icon: linkedInLogo,
+					icon: "/assets/imgs/icons/linkedin.svg",
 				},
 				{
 					name: "Instagram",
 					link: "https://www.instagram.com/mohamed_ndoye811/?hl=en",
-					icon: instagramLogo,
+					icon: "/assets/imgs/icons/instagram.svg",
 				},
 			],
 		};

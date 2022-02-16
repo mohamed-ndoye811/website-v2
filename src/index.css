@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "Karen";
-	src: url("./assets/fonts/karen.otf");
+	src: url("/assets/fonts/karen.otf");
 }
 
 @tailwind base;

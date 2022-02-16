@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { Howl } from "howler";
+import { Howl, Howler } from "howler";
 
 // Components
 import Header from "./components/Header.vue";
@@ -132,6 +132,8 @@ Player.prototype = {
 	},
 };
 
+Howler.autoUnlock = false;
+
 export default {
 	components: {
 		Header,
@@ -153,7 +155,7 @@ export default {
 	},
 
 	mounted() {
-		const audioFiles = import.meta.glob("../public/assets/musics/*.mp3");
+		const audioFiles = import.meta.glob("/assets/musics/*.mp3");
 		var playlist = [];
 
 		for (let key in audioFiles) {

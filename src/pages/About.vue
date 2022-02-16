@@ -9,7 +9,7 @@
 				>
 					<img
 						class="z-10 drop-shadow-lg relative rotate-[40deg] bottom-[2rem] left-[-2.75rem] scale-[.8]"
-						src="../assets/imgs/memojis/memoji-about.png"
+						src="/assets/imgs/memojis/memoji-about.png"
 						alt="memoji representing mohamed ndoye"
 					/>
 					<div
@@ -57,7 +57,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero e
 						class="logo bg-primary-shadow aspect-square h-full grid place-content-center rounded-md"
 					>
 						<img
-							src="../assets/imgs/icons/book.svg"
+							src="/assets/imgs/icons/book.svg"
 							class="scale-[1.25]"
 							alt=""
 							v-if="study.organization.logo == ''"
@@ -138,7 +138,7 @@ See you there maybe!</pre
 				</li>
 			</ul>
 
-			<img src="../assets/imgs/verse_logo.svg" alt="" class="mx-auto w-full" />
+			<img src="/assets/imgs/verse_logo.svg" alt="" class="mx-auto w-full" />
 		</div>
 	</section>
 </template>

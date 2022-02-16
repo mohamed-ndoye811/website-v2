@@ -10,7 +10,10 @@
 			mohamed ndoye.
 		</router-link>
 
-		<div class="menu-button font-body font-semibold" @click="toggleMenu()">
+		<div
+			class="menu-button font-body font-semibold select-none"
+			@click="toggleMenu()"
+		>
 			menu
 		</div>
 	</header>

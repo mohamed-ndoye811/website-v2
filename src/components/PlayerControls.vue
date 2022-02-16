@@ -26,17 +26,13 @@
 </template>
 
 <script>
-import play from "/assets/imgs/icons/player/play.svg";
-import change from "/assets/imgs/icons/player/change.svg";
-import pause from "/assets/imgs/icons/player/pause.svg";
-
 export default {
 	data() {
 		return {
 			icons: {
-				play: play,
-				change: change,
-				pause: pause,
+				play: "/assets/imgs/icons/player/play.svg",
+				change: "/assets/imgs/icons/player/change.svg",
+				pause: "/assets/imgs/icons/player/pause.svg",
 			},
 		};
 	},

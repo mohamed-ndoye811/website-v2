@@ -1,16 +1,16 @@
 <template>
-	<section class="hero mb-4 flex flex-col pt-[45%]">
+	<section class="hero mb-4 flex flex-col pt-[40%]">
 		<transition appear @before-enter="beforeEnter" @enter="enter">
 			<div class="heading relative col-span-6 h-auto flex flex-col gap-7">
 				<div
-					class="image grid place-content-center relative col-span-full translate-x-[-50%] z-0 mobile:scale-[.7] left-[65%] scale-[.9] xxs:bottom-10 mobile:top-[0.25rem]"
+					class="image grid place-content-center relative col-span-full translate-x-[-50%] z-0 left-[65%] scale-[.9] xxs:bottom-10"
 				>
 					<div
 						class="mask rounded-memoji overflow-hidden h-[22rem] w-[22rem] rotate-[-45deg] -mb-28 relative z-0"
 					>
 						<img
 							class="z-10 drop-shadow-lg relative rotate-[35deg] top-[-3rem] left-[-3.15rem] scale-[.8]"
-							src="../assets/imgs/memojis/memoji-hero.png"
+							src="/assets/imgs/memojis/memoji-hero.png"
 							alt="memoji representing mohamed ndoye"
 						/>
 						<div
@@ -66,7 +66,7 @@
 				>
 					<img
 						class="z-10 drop-shadow-lg relative rotate-[55deg] top-[4rem] left-[-3.15rem] scale-[.9]"
-						src="../assets/imgs/memojis/memoji-contact.png"
+						src="/assets/imgs/memojis/memoji-contact.png"
 						alt="memoji representing mohamed ndoye"
 					/>
 					<div
