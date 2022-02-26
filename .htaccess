@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(?:www\.)?mohamed-ndoye\.com$ [NC]
+RewriteCond %{REQUEST_URI} !^/prod-site/ [NC]
+RewriteRule ^(.*)$ /prod-site/$1 [L]
